@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+.welcome {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 100;
+    padding: 4em;
+}
+
+#chat {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    left: 1em;
+    top: 1em;
+    border: 1px solid black;
+    font-size: 1.1em;
+}
+
+#messages {
+    position: relative;
+    height: calc(500px - 3em);
+    width: calc(300px - 1em);
+    padding: 0.5em;
+    overflow-y: auto;
+}
+
+#chatBox {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.1em;
+    background: #EEE;
+}
+
+#latencyDisplay {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#board {
+    margin: 1em auto;
+    padding: 0;
+    display: block;
+    right: 0;
+    border: 1px solid black;
+}
+
+.button {
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 1px solid #CCC;
+    width: 300px;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    cursor: pointer;
+    padding-bottom: 0.5em;
+}
+
+.button:hover {
+    background: #EEE;
+}

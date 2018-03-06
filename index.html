@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Ludo</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet"> 
+    <link href="/static/style.css" rel="stylesheet"> 
+</head>
+<body>
+    <div id="latencyDisplay"></div>
+
+    <div class="container">
+        <div id="chat">
+            <div id="messages">
+            </div>
+            <input type="text" id="chatBox">
+        </div>
+        <canvas id="board" width="800" height="800"></canvas>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/communication.js"></script>
+<script src="/static/board.js"></script>
+<script src="/static/movement.js"></script>
+<script src="/static/game.js"></script>
+<script src="/static/chat.js"></script>
+</html>
