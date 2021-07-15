@@ -8,6 +8,9 @@ sendData('get-game-data');
 
 function getMousePosition(event) {
     var rect = canvas.getBoundingClientRect();
+
+    console.log(event)
+
     return {
         x: event.clientX - rect.left,
         y: event.clientY - rect.top
@@ -71,11 +74,15 @@ canvas.addEventListener('mousedown', function(event) {
 
     var clickedTokenData = tokenClicked(mousePosition);
 
-    if(dieClicked(mousePosition)) {
-        sendData('roll-die');
-    } else if(clickedTokenData.tokenId !== -1) {
+    if(clickedTokenData.tokenId !== -1) {
         sendData('token-clicked', clickedTokenData)
     }
+});
+
+const dieButton = document.getElementById('roll-die');
+
+dieButton.addEventListener('click', function(event) {
+    sendData('roll-die');
 });
 
 

@@ -56,9 +56,11 @@ html, body {
     border: 1px solid black;
 }
 
-.button {
+button#roll-die {
+    position: absolute;
+    top: 2em;
+    right: 2em;
     border-radius: 5px;
-    margin: 0 auto;
     background: #FFF;
     border: 1px solid #CCC;
     width: 300px;
@@ -69,6 +71,6 @@ html, body {
     padding-bottom: 0.5em;
 }
 
-.button:hover {
+button#roll-die:hover {
     background: #EEE;
 }
